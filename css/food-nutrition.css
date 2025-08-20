@@ -1,0 +1,116 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    /* margin: 100px 0px; */
+    font-size: 18px;
+    background-color: hsl(216, 18%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 45%;
+    margin-top: 80px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: hsl(183, 26%, 57%);
+    box-shadow: 0 5px 15px hsla(220, 68%, 12%, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 15px;
+    /* margin-bottom: 20px; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: hsl(55, 10%, 88%);
+}
+
+form select {
+    width: 45%;
+}
+
+button.getinfo {
+    width: 45%;
+}
+
+form button {
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: hsl(43, 70%, 87%);
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+form button:hover {
+    background-color: hsl(43, 70%, 78%);
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nutrition-info {
+    background-color: hsl(55, 10%, 88%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px hsla(220, 68%, 12%, 0.1);
+    margin-top: 20px;
+}
+
+.nutrition-info p {
+    /* margin-top: 10px; */
+    font-size: 1.1rem;
+}
+
+.nutrition-info p strong {
+    font-weight: bold;
+}
+
+.disclaimer {
+    /* margin-top: 20px;
+    margin-bottom: 0; */
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 50%);
+    text-align: center;
+}

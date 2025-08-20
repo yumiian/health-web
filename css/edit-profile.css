@@ -1,0 +1,128 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: hsl(216, 18%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.errorMsg {
+    color: hsl(0, 100%, 40%);
+    font-weight: 500;
+    padding-top: 0.8rem;
+}
+
+.successMsg {
+    color: hsl(121, 100%, 20%);
+    font-weight: 500;
+    padding-top: 0.8rem;
+}
+
+.container {
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: hsl(330, 25%, 66%);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container-sub {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-item {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.gender-item label {
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact-input {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 450;
+    background-color: hsl(55, 10%, 88%);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 0;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px hsla(220, 68%, 12%, 0.1);
+    transition: 0.3s;
+}
+
+.button button {
+    background-color: hsl(43, 70%, 87%);
+}
+
+.button button:hover {
+    background-color: hsl(43, 70%, 78%);
+}
+
+.button button[type="submit"] {
+    background-color: hsl(121, 40%, 75%);
+}
+
+.button button[type="submit"]:hover {
+    background-color: hsl(121, 40%, 65%);
+}
+
+.button-delete {
+    background-color: hsl(0, 100%, 80%);
+}
+
+.button-delete:hover {
+    background-color: hsl(0, 100%, 70%);
+}

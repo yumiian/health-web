@@ -1,0 +1,102 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    /* background: linear-gradient(#c4abc6, #be9bbf); */
+    background-color: hsl(216, 18%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.errorMsg {
+    color: hsl(0, 100%, 40%);
+    font-weight: 500;
+    padding-top: 0.8rem;
+}
+
+.successMsg {
+    color: hsl(121, 100%, 20%);
+    font-weight: 500;
+    padding-top: 0.8rem;
+}
+
+.container {
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: hsl(183, 26%, 57%);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container-sub {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-item {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.gender-item label {
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact-input {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 450;
+    background-color: hsl(55, 10%, 88%);
+}
+
+form button {
+    padding: 12px 32px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: hsl(43, 70%, 87%);
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: hsl(43, 70%, 78%);
+}

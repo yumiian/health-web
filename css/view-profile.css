@@ -1,0 +1,65 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: hsl(216, 18%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: hsl(200, 60%, 70%);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 0;
+}
+
+.button button {
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: hsl(43, 70%, 87%);
+    box-shadow: 0 5px 15px hsla(220, 68%, 12%, 0.1);
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background-color: hsl(43, 70%, 78%);
+}
+
+.button .button-logout {
+    background-color: hsl(0, 100%, 80%);
+}
+
+.button .button-logout:hover {
+    background-color: hsl(0, 100%, 70%);
+}

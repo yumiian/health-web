@@ -1,0 +1,228 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ------ variable css ------ */
+:root {
+    --font: "Rubik", sans-serif;
+
+    --underweight: hsl(193, 100%, 65%);
+    --normal: hsl(110, 48%, 52%);
+    --overweight: hsl(53, 89%, 61%);
+    --obese: hsl(20, 96%, 60%);
+    --very-obese: hsl(351, 83%, 53%);
+
+    --bg-color: hsl(216, 18%, 16%);
+    --container-color-bmi: hsl(263, 15%, 63%);
+    --container-color-bmr: hsl(0, 20%, 71%);
+    --shadow: 0 5px 15px hsla(220, 68%, 12%, 0.1);
+
+    --input-color: hsl(55, 10%, 88%);
+    --input-color-hover: hsl(55, 10%, 84%);
+    --input-color-focus: hsl(55, 10%, 75%);
+
+    --button-color: hsl(43, 70%, 87%);
+    --button-color-hover: hsl(43, 70%, 78%);
+    --button-color-reset: hsl(20, 100%, 68%);
+    --button-color-reset-hover: hsl(20, 100%, 64%);
+
+    --font-color: hsl(0, 0%, 10%);
+    --font-color-error: hsl(0, 100%, 55%);
+    --font-color-bmr: hsl(121, 100%, 30%);
+
+    --font-size-title: 2rem;
+    --font-size: 1.2rem;
+    --font-size-bmi: 1.8rem;
+    --font-size-scale: 0.86rem;
+    --font-size-scale-h: 1rem;
+    --font-size-scale-p: 1rem;
+
+    --padding: 0.7rem 0;
+    --padding-bottom: 0.3rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: var(--font-size);
+}
+
+.title {
+    text-align: center;
+    /* padding-bottom: 1rem; */
+    font-size: var(--font-size-title);
+    font-weight: bold;
+}
+
+.container {
+    width: 35%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.bmi {
+    background-color: var(--container-color-bmi);
+}
+
+.bmr {
+    background-color: var(--container-color-bmr);
+}
+
+label {
+    padding-bottom: var(--padding-bottom);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    text-align: center;
+}
+
+.gender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.gender-item {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.gender-item label {
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.calculator {
+    padding: 1rem 0;
+}
+
+.calculator input[type="number"] {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: var(--padding);
+    font-size: var(--font-size);
+    background-color: var(--input-color);
+    transition: 0.3s;
+}
+
+.calculator input[type="number"]:hover {
+    background-color: var(--input-color-hover);
+}
+
+.calculator input[type="number"]:focus {
+    background-color: var(--input-color-focus);
+}
+
+.calculator input[type="radio"] {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: var(--padding);
+}
+
+.button button {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    background-color: var(--button-color);
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.button button[type="reset"] {
+    background-color: var(--button-color-reset);
+}
+
+.button button[type="reset"]:hover {
+    background-color: var(--button-color-reset-hover);
+}
+
+.output {
+    text-align: center;
+    /* padding: var(--padding); */
+}
+
+.output #bmi-value {
+    font-size: var(--font-size-bmi);
+    font-weight: bold;
+}
+
+.bmr #bmi-value {
+    color: var(--font-color-bmr);
+}
+
+.error {
+    text-align: center;
+    color: var(--font-color-error);
+    font-weight: 500;
+}
+
+.bmi-scale {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    border-top: 10px solid var(--color);
+    font-size: var(--font-size-scale);
+    padding: 0.5rem;
+}
+
+.bmi-scale .bmi-scale-h {
+    font-size: var(--font-size-scale-h);
+}
+
+.bmi-scale p {
+    font-size: var(--font-size-scale-p);
+}
+
+.underweight {
+    color: var(--underweight);
+}
+
+.normal {
+    color: var(--normal);
+}
+
+.overweight {
+    color: var(--overweight);
+}
+
+.obese {
+    color: var(--obese);
+}
+
+.very-obese {
+    color: var(--very-obese);
+}
